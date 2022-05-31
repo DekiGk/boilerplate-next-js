@@ -7,6 +7,7 @@ module.exports = async (phase, { defaultConfig }) => {
     compiler: {
       styledComponents: true,
     },
+    reactStrictMode: true,
   };
   return nextConfig;
 };

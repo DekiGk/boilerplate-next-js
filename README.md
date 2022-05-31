@@ -1,6 +1,13 @@
 # Boilerplate for Next.js
 
-It includes Next.js, TypeScript, Styled Components, EsLint, Prettier, Testing.
+It includes:
+
+- Next.js
+- TypeScript
+- Styled Components
+- EsLint
+- Prettier
+- Jest
 
 ## Setup
 
