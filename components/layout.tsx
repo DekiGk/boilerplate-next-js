@@ -8,12 +8,6 @@ export default function Layout({ children, home = false }) {
       <Head>
         <title>Hello Next.js</title>
         <meta name="description" content="Hello Next.js" />
-        {/* <meta
-          property="og:image"
-          content=""
-        /> */}
-        {/* <meta name="og:title" content="" />
-        <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
       <header>
         <Link href="/">

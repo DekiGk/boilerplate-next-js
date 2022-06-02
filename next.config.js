@@ -8,6 +8,9 @@ module.exports = async (phase, { defaultConfig }) => {
       styledComponents: true,
     },
     reactStrictMode: true,
+    images: {
+      domains: ["images.dog.ceo"],
+    },
   };
   return nextConfig;
 };
