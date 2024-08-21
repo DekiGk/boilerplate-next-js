@@ -1,4 +1,5 @@
 import Document, { DocumentContext, DocumentInitialProps } from "next/document";
+import React from "react";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -23,7 +24,9 @@ export default class MyDocument extends Document {
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>,
-        ],
+        ].map((style, index) => (
+          <React.Fragment key={index}>{style}</React.Fragment>
+        )),
       };
     } finally {
       sheet.seal();
