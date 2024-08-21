@@ -34,13 +34,7 @@ export default function Home({ ssrProps }) {
           </a>
         </p>
 
-        <Image
-          width={300}
-          height={300}
-          alt="a dog"
-          src={ssrProps.message}
-          layout="intrinsic"
-        />
+        <Image width={300} height={300} alt="a dog" src={ssrProps.message} />
 
         <p>{ssrProps.status}</p>
       </section>

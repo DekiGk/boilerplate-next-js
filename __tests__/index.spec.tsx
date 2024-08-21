@@ -1,5 +1,4 @@
 import { render } from "@testing-library/react";
-import { debug } from "console";
 import Home, { getServerSideProps } from "../pages";
 
 const MOCKED_IMAGE =

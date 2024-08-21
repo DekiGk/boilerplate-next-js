@@ -11,23 +11,19 @@ export default function Layout({ children, home = false }) {
       </Head>
       <header>
         <Link href="/">
-          <a>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              height={108}
-              width={108}
-              alt={"profile pic"}
-            />
-          </a>
+          <Image
+            priority
+            src="/images/profile.jpg"
+            height={108}
+            width={108}
+            alt={"profile pic"}
+          />
         </Link>
       </header>
       <main>{children}</main>
       {!home && (
         <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <Link href="/">← Back to home</Link>
         </div>
       )}
     </div>

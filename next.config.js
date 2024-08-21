@@ -9,7 +9,12 @@ module.exports = async (phase, { defaultConfig }) => {
     },
     reactStrictMode: true,
     images: {
-      domains: ["images.dog.ceo"],
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "images.dog.ceo",
+        },
+      ],
     },
   };
   return nextConfig;
