@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import FirstPost from "../pages/posts/first-post";
+import FirstPost from "../../pages/posts/first-post";
 
 describe("First Post", () => {
   it("should render all elements correctly", () => {

@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import Home, { getServerSideProps } from "../pages";
+import Home, { getServerSideProps } from "../../pages";
 
 const MOCKED_IMAGE =
   "https://images.dog.ceo/breeds/spaniel-welsh/n02102177_3524.jpg";
