@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../src/components/layout";
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
