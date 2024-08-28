@@ -8,7 +8,7 @@ const StyledP = styled.p`
 `;
 
 export async function getServerSideProps() {
-  const DATA_LAKE = "https://dog.ceo/api/breeds/image/random";
+  const DATA_LAKE = "https://dog.ceo/api/breed/spaniel/brittany/images/random";
   let ssrProps: {
     message: string;
     status: string;

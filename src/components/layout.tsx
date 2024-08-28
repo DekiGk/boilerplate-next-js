@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import profile from "../../public/images/profile.jpg";
 
 export default function Layout({ children, home = false }) {
   return (
@@ -13,9 +14,9 @@ export default function Layout({ children, home = false }) {
         <Link href="/">
           <Image
             priority
-            src="/images/profile.jpg"
-            height={108}
-            width={108}
+            src={profile}
+            height={100}
+            width={100}
             alt={"profile pic"}
           />
         </Link>
