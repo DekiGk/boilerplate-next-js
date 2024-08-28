@@ -34,7 +34,15 @@ export default function Home({ ssrProps }) {
           </a>
         </p>
 
-        <Image width={300} height={300} alt="a dog" src={ssrProps.message} />
+        <Image
+          width={300}
+          height={300}
+          alt="a dog"
+          src={ssrProps.message}
+          quality={100}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkUPlfDwAC8wGkZidegwAAAABJRU5ErkJggg=="
+        />
 
         <p>{ssrProps.status}</p>
       </section>
