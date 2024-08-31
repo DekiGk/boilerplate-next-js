@@ -1,7 +1,7 @@
-import Layout from "../src/components/layout";
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
+import Head from "next/head";
 
 const StyledP = styled.p`
   color: blue;
@@ -26,7 +26,12 @@ export async function getServerSideProps() {
 
 export default function Home({ ssrProps }) {
   return (
-    <Layout home>
+    <>
+      <Head>
+        <title>Hello Next.js</title>
+        <meta name="description" content="Hello Next.js" />
+      </Head>
+
       <section>
         <p>
           <a href="https://nextjs.org/learn" target="_blank" rel="noreferrer">
@@ -46,10 +51,12 @@ export default function Home({ ssrProps }) {
 
         <p>{ssrProps.status}</p>
       </section>
+
       <h2>
         <Link href="/posts/first-post">First post</Link>
       </h2>
+
       <StyledP>Hello</StyledP>
-    </Layout>
+    </>
   );
 }

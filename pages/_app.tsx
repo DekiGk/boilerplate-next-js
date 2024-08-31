@@ -1,9 +1,16 @@
 import { AppProps } from "next/app";
+
 import "../src/styles/reset.css";
 import "../src/styles/global.css";
 
+import Layout from "../src/components/layout";
+
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default App;
