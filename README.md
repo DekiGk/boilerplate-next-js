@@ -2,7 +2,7 @@
 
 It includes:
 
-- Next.js
+- Next.js with pages router
 - TypeScript
 - Styled Components
 - EsLint
