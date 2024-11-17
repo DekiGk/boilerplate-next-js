@@ -28,8 +28,26 @@ export default function Home({ ssrProps }) {
   return (
     <>
       <Head>
-        <title>Hello Next.js</title>
-        <meta name="description" content="Hello Next.js" />
+        {/* TODO: extract into a separate component */}
+        {/* SEO */}
+        <title>Gangafa | A Next.js Boilerplate</title>
+        <meta name="description" content="Gangafa | A Next.js Boilerplate" />
+        <meta name="keywords" content="Gangafa, NextJs Boilerplate" />
+        {/* TODO: Add the URL */}
+        <link rel="canonical" href="" />
+
+        {/* OG */}
+        <meta property="og:locale" content="en_GB" />
+        <meta
+          property="og:description"
+          content="Gangafa | A Next.js Boilerplate"
+        />
+        <meta property="og:type" content="website" />
+        {/* TODO: Add the image */}
+        <meta property="og:image" content="" />
+        {/* TODO: Add the URL */}
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Gangafa | A Next.js Boilerplate" />
       </Head>
 
       <section>
