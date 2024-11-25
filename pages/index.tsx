@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
-import Head from "next/head";
+import { Seo } from "../src/components/Seo";
 
 const StyledP = styled.p`
   color: blue;
@@ -27,28 +27,7 @@ export async function getServerSideProps() {
 export default function Home({ ssrProps }) {
   return (
     <>
-      <Head>
-        {/* TODO: extract into a separate component */}
-        {/* SEO */}
-        <title>Gangafa | A Next.js Boilerplate</title>
-        <meta name="description" content="Gangafa | A Next.js Boilerplate" />
-        <meta name="keywords" content="Gangafa, NextJs Boilerplate" />
-        {/* TODO: Add the URL */}
-        <link rel="canonical" href="" />
-
-        {/* OG */}
-        <meta property="og:locale" content="en_GB" />
-        <meta
-          property="og:description"
-          content="Gangafa | A Next.js Boilerplate"
-        />
-        <meta property="og:type" content="website" />
-        {/* TODO: Add the image */}
-        <meta property="og:image" content="" />
-        {/* TODO: Add the URL */}
-        <meta property="og:url" content="" />
-        <meta property="og:title" content="Gangafa | A Next.js Boilerplate" />
-      </Head>
+      <Seo />
 
       <section>
         <p>

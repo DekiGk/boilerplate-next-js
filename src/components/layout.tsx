@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profile from "../../public/images/profile.jpg";
 
-export default function Layout({ children }) {
+export const Layout = ({ children }) => {
   return (
     <div>
       <header>
@@ -20,4 +20,4 @@ export default function Layout({ children }) {
       <main>{children}</main>
     </div>
   );
-}
+};
